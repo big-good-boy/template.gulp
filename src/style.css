@@ -1,0 +1,35 @@
+header {
+  margin: auto;
+  max-width: 800px;
+}
+
+footer {
+  margin: auto;
+  max-width: 800px;
+  background-color: silver;
+}
+
+::-webkit-input-placeholder {
+  color: gray;
+}
+
+::-moz-placeholder {
+  color: gray;
+}
+
+:-ms-input-placeholder {
+  color: gray;
+}
+
+::-ms-input-placeholder {
+  color: gray;
+}
+
+::placeholder {
+  color: gray;
+}
+
+* {
+  font-size: 16px;
+  line-height: 1.2;
+}

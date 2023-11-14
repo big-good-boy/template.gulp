@@ -1,0 +1,11 @@
+@import 'blocks/header';
+@import 'blocks/footer';
+
+::placeholder {
+  color: gray;
+}
+
+* {
+	font-size: 16px;
+	line-height: 1.2;
+}
