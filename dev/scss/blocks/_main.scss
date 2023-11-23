@@ -1,0 +1,25 @@
+.main {
+
+	// .main__section
+	&__section {
+		padding: 3rem 0;
+
+		&--blue {
+			background-color: #3489db;
+			color: $white;
+		}
+	}
+
+	// .main__title
+	&__title {
+		font-size: 40px;
+	}
+
+	// .main__text
+	&__text {}
+
+	// .main__sub-title
+	&__sub-title {
+		font-size: 30px;
+	}
+}

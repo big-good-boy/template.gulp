@@ -1,4 +1,13 @@
-header {
-	margin: auto;
-	max-width: 800px;
+.header {
+	padding: 120px 0;
+	color: $white;
+	background-color: #d13b3b;
+
+	// .header__title
+	&__title {
+		font-size: 24px;
+		text-align: center;
+	}
+	// .header__menu
+	&__menu {}
 }

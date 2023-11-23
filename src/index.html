@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('blocks/head.html', {
-	"title":"Главная"
-})
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="main.min.js?v=1700763157994" defer></script>
+	<link rel="stylesheet" href="style.min.css?v=1700763157994">
+	<title>Главная</title>
+</head>
 <body>
-	@@include('blocks/header.html', {})
+	<header class="header">
+	<div class="container">
+		<p class="header__title">Стартовый шаблон</p>
+		<div class="header__menu menu">
+			<div class="menu__icon">
+				<span></span>
+			</div>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item"><a class="menu__link" href="#_1">Раздел 1</a></li>
+					<li class="menu__item"><a class="menu__link" href="#_2">Раздел 2</a></li>
+					<li class="menu__item"><a class="menu__link" href="#_3">Раздел 3</a></li>
+					<li class="menu__item"><a class="menu__link" href="#_4">Раздел 4</a></li>
+					<li class="menu__item menu__item--arrow"><a class="menu__link" href="#_1">Страница 1</a>
+						<ul class="menu__sub-list">
+							<li class="menu__sub-item"><a class="menu__sub-link" href="#_1">Раздел 1</a></li>
+							<li class="menu__sub-item"><a class="menu__sub-link" href="#_2">Раздел 2</a></li>
+							<li class="menu__sub-item"><a class="menu__sub-link" href="#_3">Раздел 3</a></li>
+							<li class="menu__sub-item"><a class="menu__sub-link" href="#_4">Раздел 4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
 
 	<main class="main">
 
@@ -58,6 +87,10 @@
 
 	</main>
 
-	@@include('blocks/footer.html', {})
+	<footer class="footer">
+	<div class="container">
+		<p class="footer__title">Подвал</p>
+	</div>
+</footer>
 </body>
 </html>

@@ -1,5 +1,9 @@
-footer {
-	margin: auto;
-	max-width: 800px;
-	background-color: silver;
+.footer {
+	margin-top: auto;
+	padding: 40px 0 100px;
+	color: $white;
+	background-color: #606060;
+
+	//footer__title
+	&__title {}
 }

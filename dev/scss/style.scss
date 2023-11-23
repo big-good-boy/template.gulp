@@ -1,11 +1,54 @@
+// библиотеки
+@import 'fonts.scss';
+@import 'libs/normalize';
+
+
+
+// точки для адаптива
+$xs: 376px;
+$sm: 536px;
+$md: 720px;
+$lg: 960px;
+$xl: 1160px;
+$xxl: 1320px;
+
+// цвета
+$white: #fcfcfc;
+$black: #393e40;
+
+// прочие переменные
+$transition: .2s;
+$padding: 1rem;
+
+
+
+// основное оформление
+html {
+	height: 100%;
+	font-family: sans-serif;
+	color: $black;
+	scroll-behavior: smooth;
+	body {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+}
+.container {
+	margin: auto;
+	padding: 0 $padding;
+	@media (min-width:$xs) { max-width: calc($xs - ($padding * 2)); }
+	@media (min-width:$sm) { max-width: calc($sm - ($padding * 2)); }
+	@media (min-width:$md) { max-width: calc($md - ($padding * 2)); }
+	@media (min-width:$lg) { max-width: calc($lg - ($padding * 2)); }
+	@media (min-width:$xl) { max-width: calc($xl - ($padding * 2)); }
+	@media (min-width:$xxl) { max-width: calc($xxl - ($padding * 2)); }
+}
+
+
+
+// блоки
 @import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/main';
 @import 'blocks/footer';
-
-::placeholder {
-  color: gray;
-}
-
-* {
-	font-size: 16px;
-	line-height: 1.2;
-}
