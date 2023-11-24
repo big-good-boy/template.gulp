@@ -1,4 +1,4 @@
-import * as nodePath from "path";
+import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve()); // Получаем имя папки проекта
 
 const devFolder = './dev';

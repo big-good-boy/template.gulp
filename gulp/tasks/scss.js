@@ -1,12 +1,16 @@
 import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
-import mediaQueries from "gulp-group-css-media-queries";
+import mediaQueries from 'gulp-group-css-media-queries';
 
 const sass = gulpSass(dartSass);
 
 export const scss = () => {
-	return app.gulp.src(app.path.dev.scss)
+	return app.gulp.src([
+			'node_modules/normalize.css/normalize.css',
+			app.path.dev.scss
+		])
+		.pipe(app.plugins.concat('style.scss'))
 		.pipe(sass())
 		.pipe(autoprefixer({
 			grid: true,

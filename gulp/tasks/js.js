@@ -1,7 +1,10 @@
-import minify from "gulp-minify";
+import minify from 'gulp-minify';
 
 export const js = () => {
-	return app.gulp.src(app.path.dev.js)
+	return app.gulp.src([
+		app.path.dev.js
+	])
+	.pipe(app.plugins.concat('main.js'))
 	.pipe(minify({
 		ext:{
 			src:'.js',
