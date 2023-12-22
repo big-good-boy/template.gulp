@@ -1,18 +1,18 @@
-let menu = document.querySelector('.menu');
-if (menu) {
+var templateMenu = document.querySelector('.menu');
+if (templateMenu) {
 	if (document.querySelector('.menu__icon')) {
 		document.querySelectorAll('.menu__icon').forEach(el => {
 			el.addEventListener('click', () => {
 				document.querySelector('body').classList.toggle('lock');
-				menu.classList.toggle('menu--open');
+				templateMenu.classList.toggle('menu--open');
 			});
 		});
 	}
-	if (menu.querySelector('a')) {
-		menu.querySelectorAll('a').forEach(el => {
+	if (templateMenu.querySelector('a')) {
+		templateMenu.querySelectorAll('a').forEach(el => {
 			el.addEventListener('click', () => {
 				document.querySelector('body').classList.remove('lock');
-				menu.classList.remove('menu--open');
+				templateMenu.classList.remove('menu--open');
 			});
 		});
 	}

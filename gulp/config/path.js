@@ -10,7 +10,7 @@ export const path = {
 		html: `${devFolder}/html/*.html`,
 		scss: `${devFolder}/scss/style.scss`,
 		js: `${devFolder}/js/main.js`,
-		images: `${devFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
+		images: `${devFolder}/img/`,
 		svg: `${devFolder}/img/**/*.svg`,
 		fonts: `${devFolder}/fonts`,
 	},
