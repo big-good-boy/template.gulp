@@ -22,6 +22,7 @@
 			width: 100%;
 			height: 4px;
 			background: $white;
+			transition: $transition;
 		}
 		&::before,
 		&::after {
@@ -195,6 +196,18 @@
 		&--open {
 			.menu__icon {
 				position: fixed;
+				&::before {
+					transform: rotate(45deg);
+					top: calc(50% - 2px);
+				}
+				span {
+					transform: rotateY(90deg) rotateX(90deg);
+					transform-origin: 0%;
+				}
+				&::after {
+					transform: rotate(-45deg);
+					bottom: calc(50% - 2px);
+				}
 			}
 			.menu__body {
 				transform: translate(0, 0);
